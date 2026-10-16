@@ -15,7 +15,7 @@ created_at: '2026-10-06T16:05:28.221422+00:00'
 ---
 
 <p align="center">
-  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+  <img src="../img/logo.png" alt="شعار تسليمات" width="280" />
 </p>
 
 # 🏛️ دليل سياسات وإجراءات مكتب إدارة المشاريع المؤسسي (SOPs)

@@ -101,8 +101,11 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
     content = f"""
     <section class="hero-section">
       <div class="container">
+        <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+          <img src="{base_url}/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="130" height="128" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+        </div>
         <div class="hero-pill">
-          <span>🛡️ Verified Project Deliverables &amp; Open Toolkit &bull; v2.6.1 Stable on PyPI</span>
+          <span>🛡️ Verified Project Deliverables &amp; Open Toolkit &bull; v2.6.2 Stable on PyPI</span>
         </div>
         <h1 class="hero-title">Bilingual Project Management Deliverable Library &amp; Toolkit</h1>
         <p class="hero-subtitle">
@@ -120,8 +123,16 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
       </div>
     </section>
 
+    <!-- Architecture Visual Overview -->
+    <div class="container" style="margin-top: 2rem; margin-bottom: 1.5rem; text-align: center;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.25rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);">
+        <img src="{base_url}/img/Readme.jpeg" alt="Tasleemat PMO Operating System Overview" style="width: 100%; max-width: 1100px; height: auto; border-radius: 10px;" loading="lazy">
+      </div>
+    </div>
+
     <!-- Quick Installation & Resource Links Bar -->
     <div style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 1.75rem 0;">
+
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.1rem 1.6rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);">
           
@@ -141,7 +152,7 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
           <!-- Resource Badge Links -->
           <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
             <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
-              📦 PyPI Package (v2.6.1)
+              📦 PyPI Package (v2.6.2)
             </a>
             <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
@@ -156,19 +167,19 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
       </div>
     </div>
 
-    <!-- What's New in v2.6.1 Banner -->
+    <!-- What's New in v2.6.2 Banner -->
     <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
           <div>
             <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">
-              🚀 Official Stable Release &bull; v2.6.1 on PyPI
+              🚀 Official Stable Release &bull; v2.6.2 on PyPI
             </div>
-            <h2 class="section-title" style="margin-bottom: 0.25rem;">What's New in Tasleemat v2.6.1</h2>
+            <h2 class="section-title" style="margin-bottom: 0.25rem;">What's New in Tasleemat v2.6.2</h2>
             <p class="section-desc" style="margin-bottom: 0;">100% tailoring matrix coverage across all 114 deliverables, native MCP governance auditor, TUI workstation, and modern PEP 517 packaging.</p>
           </div>
           <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
-            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.1"</code>
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.2"</code>
             <a href="{base_url}/developers/cli/#tui" class="btn-secondary" style="padding: 0.6rem 1.1rem; font-size: 0.88rem;">Explore TUI &rarr;</a>
           </div>
         </div>
@@ -215,7 +226,7 @@ def generate_home_en(base_url: str = "/Tasleemat") -> str:
               <span>🔌</span> Official MCP Registry Listing
             </div>
             <div class="card-desc" style="font-size: 0.88rem;">
-              Officially published to the Anthropic/Model Context Protocol Registry as <code>io.github.fakhruldeen/tasleemat</code> v2.6.1 with zero-configuration stdio execution.
+              Officially published to the Anthropic/Model Context Protocol Registry as <code>io.github.fakhruldeen/tasleemat</code> v2.6.2 with zero-configuration stdio execution.
             </div>
             <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #f59e0b; font-family: var(--font-mono);">
               $ uvx tasleemat-mcp
@@ -367,8 +378,11 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
     content = f"""
     <section class="hero-section">
       <div class="container">
+        <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+          <img src="{base_url}/img/logo.png" alt="شعار مكتبة تسليمات" width="130" height="128" style="filter: drop-shadow(0 6px 18px rgba(0,0,0,0.08)); border-radius: 16px;">
+        </div>
         <div class="hero-pill">
-          <span>🛡️ تسليمات معتمدة ثنائية اللغة وأدوات مساندة &bull; الإصدار المستقر v2.6.1 على PyPI</span>
+          <span>🛡️ تسليمات معتمدة ثنائية اللغة وأدوات مساندة &bull; الإصدار المستقر v2.6.2 على PyPI</span>
         </div>
         <h1 class="hero-title">مكتبة تسليمات إدارة المشاريع ثنائية اللغة ومجموعة الأدوات</h1>
         <p class="hero-subtitle">
@@ -386,8 +400,16 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
       </div>
     </section>
 
+    <!-- Architecture Visual Overview AR -->
+    <div class="container" style="margin-top: 2rem; margin-bottom: 1.5rem; text-align: center;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.25rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);">
+        <img src="{base_url}/img/Readme.jpeg" alt="نظرة معمارية شاملة لنظام تسليمات لإدارة المشاريع" style="width: 100%; max-width: 1100px; height: auto; border-radius: 10px;" loading="lazy">
+      </div>
+    </div>
+
     <!-- Quick Installation & Resource Links Bar in Arabic -->
     <div style="background: var(--bg-card); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 1.75rem 0;">
+
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.1rem 1.6rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);">
           
@@ -407,7 +429,7 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
           <!-- Resource Badge Links AR -->
           <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
             <a href="https://pypi.org/project/tasleemat/" target="_blank" rel="noopener" class="footer-badge-link" style="padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
-              📦 حزمة PyPI (v2.6.1)
+              📦 حزمة PyPI (v2.6.2)
             </a>
             <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="footer-badge-link" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.85rem;">
               <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
@@ -422,19 +444,19 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
       </div>
     </div>
 
-    <!-- What's New in v2.6.1 Banner in Arabic -->
+    <!-- What's New in v2.6.2 Banner in Arabic -->
     <section class="boundaries-section" style="background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); padding: 3rem 0;">
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
           <div>
             <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.1); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">
-              🚀 الإصدار المستقر الرسمي &bull; v2.6.1 على مستودع PyPI
+              🚀 الإصدار المستقر الرسمي &bull; v2.6.2 على مستودع PyPI
             </div>
-            <h2 class="section-title" style="margin-bottom: 0.25rem;">الجديد في إصدار تسليمات v2.6.1</h2>
+            <h2 class="section-title" style="margin-bottom: 0.25rem;">الجديد في إصدار تسليمات v2.6.2</h2>
             <p class="section-desc" style="margin-bottom: 0;">تغطية مصفوفة التخصيص 100% لكافة الـ 114 تسليمة، أداة التدقيق المؤسسي عبر خادم MCP، وبيئة عمل الطرفية التفاعلية TUI.</p>
           </div>
           <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; direction: ltr;">
-            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.1"</code>
+            <code style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 0.6rem 1rem; border-radius: 0.5rem; font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent-blue);">pip install "tasleemat[tui]==2.6.2"</code>
             <a href="{base_url}/ar/developers/cli/#tui" class="btn-secondary" style="padding: 0.6rem 1.1rem; font-size: 0.88rem;">استكشف TUI &larr;</a>
           </div>
         </div>
@@ -481,7 +503,7 @@ def generate_home_ar(base_url: str = "/Tasleemat") -> str:
               <span>🔌</span> توثيق سجل بروتوكول MCP الرسمي
             </div>
             <div class="card-desc" style="font-size: 0.88rem;">
-              نُشر الخادم رسمياً في سجل Model Context Protocol العام كخادم معتمد تحت المعرّف <code>io.github.fakhruldeen/tasleemat</code> v2.6.1 للتشغيل المباشر عبر stdio.
+              نُشر الخادم رسمياً في سجل Model Context Protocol العام كخادم معتمد تحت المعرّف <code>io.github.fakhruldeen/tasleemat</code> v2.6.2 للتشغيل المباشر عبر stdio.
             </div>
             <div style="margin-top: 0.75rem; font-size: 0.82rem; color: #f59e0b; font-family: var(--font-mono); direction: ltr; text-align: left;">
               $ uvx tasleemat-mcp

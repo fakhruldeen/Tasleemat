@@ -3,6 +3,32 @@ type: Guide
 ---
 # Tasleemat Release Notes
 
+## 🚀 Tasleemat v2.6.2 — Offline Airgapped Documentation, UNIX Man Pages, Brand Identity & PyPI Discoverability
+
+**Release Date:** October 17, 2026  
+**PyPI Version:** [`tasleemat 2.6.2`](https://pypi.org/project/tasleemat/2.6.2/)  
+**Git Tag:** [`v2.6.2`](https://github.com/fakhruldeen/Tasleemat/releases/tag/v2.6.2)  
+
+---
+
+### 📚 Comprehensive Offline Knowledge Base & Documentation (`tasleemat docs`)
+- **Zero-Telemetry Airgapped Handbook (`tasleemat docs airgap`):** Complete guide for installing and running Tasleemat in secure, airgapped, or classified networks without internet access. Covers offline wheel deployment (`pip install --no-index --find-links`), local LLM inference (Ollama, vLLM, mock mode), and offline schema auditing.
+- **9 Specialized Offline Guides:** Instant access to governance knowledge via the terminal: `airgap`, `tiers`, `packs`, `gates`, `eva`, `mcp`, `catalog`, `lexicon`, and `cli`.
+
+### 📖 Standard UNIX Man Pages (`tasleemat man` & `docs/tasleemat.1`)
+- **System Man Integration:** Created official troff/groff manual page `docs/tasleemat.1` compatible with standard Linux/Unix `man ./docs/tasleemat.1`.
+- **Interactive Terminal Viewer:** `tasleemat man [command]` launches formatted man pages with interactive pager support (`less -R`).
+
+### ⚡ Enhanced CLI Help System (`--help` / `-h`)
+- **Dynamic Color Configuration:** Added automatic `NO_COLOR` and non-tty detection for clean piping and automated logging.
+- **Subcommand Manuals:** Upgraded root and subcommand help (`tasleemat init -h`, `tasleemat audit -h`) with rich parameter tables, airgap notes, and real-world examples.
+
+### 🎨 Visual Identity & PyPI Discoverability
+- **Brand Assets:** Integrated high-resolution architecture overview banner (`Readme.jpeg`), square package logo (`logo-sq.png`), unified brand logo (`logo.png`), and social preview cards (`social.jpeg`).
+- **PyPI Showcase:** Enhanced package metadata in `setup.py` with custom logo rendering, author profile (Mohamed Fakhruldeen), verified URLs (`fakhr.me` & `fakhr.me/Tasleemat`), search keywords, and 29 validated Trove classifiers.
+
+---
+
 ## 🚀 Tasleemat v2.6.1 — 100% Tailoring Matrix Coverage, Native MCP Project Auditor & Modern Packaging
 
 **Release Date:** October 16, 2026  

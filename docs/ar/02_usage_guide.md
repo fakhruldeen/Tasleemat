@@ -15,7 +15,7 @@ created_at: '2026-10-06T16:05:28.228756+00:00'
 ---
 
 <p align="center">
-  <img src="../img/logo-ar.png" alt="شعار تسليمات" width="280" />
+  <img src="../img/logo.png" alt="شعار تسليمات" width="280" />
 </p>
 
 <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; text-align: right;" markdown="1">

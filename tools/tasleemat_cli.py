@@ -18,16 +18,34 @@ FORMS_DIR = ROOT / "forms"
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-class Colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+def _use_color():
+    if os.environ.get("NO_COLOR") or os.environ.get("TERM") == "dumb":
+        return False
+    return sys.stdout.isatty()
+
+class _ColorsMeta(type):
+    @property
+    def HEADER(cls): return '\033[95m' if _use_color() else ''
+    @property
+    def OKBLUE(cls): return '\033[94m' if _use_color() else ''
+    @property
+    def OKCYAN(cls): return '\033[96m' if _use_color() else ''
+    @property
+    def OKGREEN(cls): return '\033[92m' if _use_color() else ''
+    @property
+    def WARNING(cls): return '\033[93m' if _use_color() else ''
+    @property
+    def FAIL(cls): return '\033[91m' if _use_color() else ''
+    @property
+    def ENDC(cls): return '\033[0m' if _use_color() else ''
+    @property
+    def BOLD(cls): return '\033[1m' if _use_color() else ''
+    @property
+    def UNDERLINE(cls): return '\033[4m' if _use_color() else ''
+
+class Colors(metaclass=_ColorsMeta):
+    pass
+
 
 TIER_PACKS = {
     "1": {
@@ -584,6 +602,277 @@ def run_tests(args):
         print(f"\n{Colors.FAIL}{Colors.BOLD}❌ Test failures detected!{Colors.ENDC}\n")
         sys.exit(1)
 
+def show_offline_docs(topic=None):
+    """Display comprehensive offline documentation guides for airgapped environments."""
+    valid_topics = {
+        "airgap": "Airgapped & Offline PMO Operations Handbook (packaging, wheels, local LLM, zero-telemetry)",
+        "tiers": "Governance Tiers Deep-Dive (Tier 1 Mega, Tier 2 Standard, Tier 3 Lean) & Sizing Matrix",
+        "packs": "Methodology Archetype Packs (General/PMBOK, Agile/Scrum, AI Governance, Predictive, Hybrid)",
+        "gates": "The 6 Stage-Gates (Gate 0 to Gate 5) Criteria, RACI Checklists & Decision Authorities",
+        "eva": "Earned Value Analysis Mathematical Formulas, Variances, Indices & Threshold Matrix",
+        "mcp": "Offline AI Agent Integration (Cursor, Claude Desktop, Antigravity, OpenCode over stdio)",
+        "catalog": "Master 114 Deliverable Catalog Index across 8 Lifecycle Phases (00 to 07)",
+        "lexicon": "Bilingual (English & Arabic) PMO Dictionary & Terminology Mappings",
+        "cli": "Full CLI Command Manual and Parameter Reference"
+    }
+
+    if not topic or topic.lower() in ["topics", "list", "index"]:
+        print(f"\n{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}")
+        print(f"{Colors.HEADER}{Colors.BOLD}   📚 Tasleemat Offline Documentation & Airgapped Knowledge Base               {Colors.ENDC}")
+        print(f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n")
+        print(f"{Colors.BOLD}Available Offline Documentation Topics:{Colors.ENDC}\n")
+        for t_key, t_desc in valid_topics.items():
+            print(f"  {Colors.OKGREEN}tasleemat docs {t_key:<12}{Colors.ENDC} {t_desc}")
+        print(f"\n{Colors.BOLD}Usage:{Colors.ENDC}")
+        print(f"  {Colors.OKBLUE}tasleemat docs <topic>{Colors.ENDC}    (e.g., {Colors.OKCYAN}tasleemat docs airgap{Colors.ENDC})\n")
+        print(f"  {Colors.OKBLUE}tasleemat man [command]{Colors.ENDC}   (e.g., {Colors.OKCYAN}tasleemat man init{Colors.ENDC})\n")
+        return
+
+    topic = topic.lower().strip()
+    if topic == "cli":
+        print_comprehensive_help()
+        return
+
+    if topic not in valid_topics:
+        print(f"\n{Colors.FAIL}Unknown documentation topic: '{topic}'{Colors.ENDC}")
+        print(f"Run {Colors.OKGREEN}tasleemat docs{Colors.ENDC} to view all available topics.\n")
+        return
+
+    print(f"\n{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}")
+    print(f"{Colors.HEADER}{Colors.BOLD}   📚 Tasleemat Offline Knowledge Base: {topic.upper()}                           {Colors.ENDC}")
+    print(f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n")
+
+    if topic == "airgap":
+        print(f"""{Colors.BOLD}1. AIRGAPPED & ZERO-TELEMETRY ARCHITECTURE{Colors.ENDC}
+  Tasleemat is engineered from the ground up for classified, airgapped, and zero-connectivity
+  facilities. It requires NO external network connectivity during installation or runtime.
+  - Zero telemetry or phone-home pings.
+  - All 114 deliverable templates, prompt schemas, and examples are bundled in the package.
+  - Frictionless data specifications and Draft 2020-12 JSON schemas are locally validated.
+
+{Colors.BOLD}2. OFFLINE INSTALLATION IN ISOLATED NETWORKS{Colors.ENDC}
+  Step A: Download wheel and dependencies on an internet-connected gateway:
+    {Colors.OKGREEN}pip download tasleemat -d ./tasleemat_wheels{Colors.ENDC}
+  Step B: Transfer ./tasleemat_wheels via approved security protocol / USB media.
+  Step C: Install on the airgapped machine without external repository access:
+    {Colors.OKGREEN}pip install --no-index --find-links ./tasleemat_wheels tasleemat{Colors.ENDC}
+
+{Colors.BOLD}3. LOCAL OFFLINE LLM INFERENCE{Colors.ENDC}
+  Tasleemat supports local, self-hosted LLM models running on private hardware:
+  - {Colors.BOLD}Ollama (Default Local Endpoint):{Colors.ENDC}
+    Start Ollama on localhost:11434 and configure Tasleemat:
+    {Colors.OKGREEN}tasleemat config set --provider ollama --model deepseek-r1 --endpoint http://localhost:11434{Colors.ENDC}
+  - {Colors.BOLD}vLLM / LM Studio / LocalAI (OpenAI-Compatible):{Colors.ENDC}
+    {Colors.OKGREEN}tasleemat config set --provider custom --model qwen2.5-coder --endpoint http://localhost:8000/v1{Colors.ENDC}
+  - {Colors.BOLD}Zero-Token Mock Mode:{Colors.ENDC}
+    For rapid testing or completely compute-free generation without local LLM:
+    {Colors.OKGREEN}tasleemat generate --form PMO-03.01 --mock --out ./Project_Charter.md{Colors.ENDC}
+
+{Colors.BOLD}4. AIRGAPPED GOVERNANCE AUDITING{Colors.ENDC}
+  Verify scaffolded workspaces and Draft 2020-12 schema conformance completely offline:
+    {Colors.OKGREEN}tasleemat audit ./my_project --tier 2 --pack agile --strict{Colors.ENDC}
+
+{Colors.BOLD}5. OFFLINE TERMINAL WORKSTATION (TUI){Colors.ENDC}
+  Launch full-screen terminal workstation with zero web or cloud dependencies:
+    {Colors.OKGREEN}tasleemat tui --lang ar{Colors.ENDC}
+""")
+
+    elif topic == "tiers":
+        print(f"""{Colors.BOLD}GOVERNANCE TIERS & SIZING MATRIX{Colors.ENDC}
+Tasleemat eliminates one-size-fits-all bureaucracy through 3 mathematically calibrated tiers:
+
+{Colors.BOLD}1. Tier 1 — Enterprise / Strategic{Colors.ENDC}
+  • {Colors.OKCYAN}Profile:{Colors.ENDC} Mission-critical, multi-million dollar investments, high regulatory scrutiny.
+  • {Colors.OKCYAN}Deliverables:{Colors.ENDC} 35 to 50 standardized deliverables.
+  • {Colors.OKCYAN}Stage-Gates:{Colors.ENDC} All 6 Stage-Gates (Gate 0 through Gate 5) strictly mandatory.
+  • {Colors.OKCYAN}RACI Requirements:{Colors.ENDC} Formal Steering Committee sign-offs, external audit compliance.
+  • {Colors.OKCYAN}Scaffolding Command:{Colors.ENDC}
+    {Colors.OKGREEN}tasleemat init --tier 1 --pack general --name "Mega Project"{Colors.ENDC}
+
+{Colors.BOLD}2. Tier 2 — Standard Enterprise{Colors.ENDC}
+  • {Colors.OKCYAN}Profile:{Colors.ENDC} Medium-complexity business transformations, department systems, $500K–$5M.
+  • {Colors.OKCYAN}Deliverables:{Colors.ENDC} 18 to 25 core deliverables.
+  • {Colors.OKCYAN}Stage-Gates:{Colors.ENDC} Gates 1, 2, 3, and 5 mandatory; Gate 4 recommended.
+  • {Colors.OKCYAN}Scaffolding Command:{Colors.ENDC}
+    {Colors.OKGREEN}tasleemat init --tier 2 --pack agile --name "Digital Portal"{Colors.ENDC}
+
+{Colors.BOLD}3. Tier 3 — Fast-Track / Lean{Colors.ENDC}
+  • {Colors.OKCYAN}Profile:{Colors.ENDC} Internal tools, rapid proof-of-concepts, agile sprints, < $500K budget.
+  • {Colors.OKCYAN}Deliverables:{Colors.ENDC} 7 to 9 high-impact deliverables (Charter, Backlog, Risk, Closeout).
+  • {Colors.OKCYAN}Stage-Gates:{Colors.ENDC} Gate 2 (Charter Authorization) and Gate 5 (Closeout) mandatory.
+  • {Colors.OKCYAN}Scaffolding Command:{Colors.ENDC}
+    {Colors.OKGREEN}tasleemat init --tier 3 --pack agile --name "Internal Utility"{Colors.ENDC}
+""")
+
+    elif topic == "packs":
+        print(f"""{Colors.BOLD}METHODOLOGY ARCHETYPE PACKS{Colors.ENDC}
+Every project is tailored by selecting one of 5 methodology archetype packs:
+
+{Colors.BOLD}1. General / PMBOK (`general`){Colors.ENDC}
+  • Standard PMI PMBOK® 6th, 7th & 8th Edition ready alignment.
+  • Comprehensive coverage across Scope, Schedule, Cost, Quality, Risk, and Procurement.
+
+{Colors.BOLD}2. Agile / Scrum (`agile`){Colors.ENDC}
+  • Focuses on Product Vision Canvas, Release Roadmaps, User Stories, Sprint Backlogs,
+    Burn-up / Burn-down Charts, Definition of Done (DoD), and Sprint Retrospectives.
+
+{Colors.BOLD}3. AI Governance & Engineering (`ai`){Colors.ENDC}
+  • Strictly aligned with NIST AI RMF and ISO/IEC 42001.
+  • Includes AI Model Cards, Ethical Impact Assessments, Data Provenance & Bias Audits,
+    Continuous Drift Monitoring, and AI Incident Response playbooks.
+
+{Colors.BOLD}4. Predictive / Waterfall (`predictive`){Colors.ENDC}
+  • Sequential stage-gate workflow with strict formal baselines, Earned Value tracking,
+    contractual milestones, and change control boards.
+
+{Colors.BOLD}5. Hybrid (`hybrid`){Colors.ENDC}
+  • Blends predictive executive governance (Stage-Gates, Budgets, Vendor Procurement)
+    with agile iterative product development (Sprints, Epics, Stories).
+""")
+
+    elif topic == "gates":
+        print(f"""{Colors.BOLD}THE 6 PMO STAGE-GATES (GATE 0 TO GATE 5){Colors.ENDC}
+Formal governance decision checkpoints to prevent scope creep and capital misallocation:
+
+{Colors.BOLD}• Gate 0: Strategic Alignment & Mandate (Phase 00){Colors.ENDC}
+  Confirms that the proposed initiative aligns with strategic portfolio priorities.
+  Deliverables: Strategic Alignment Matrix (PMO-00.01), Portfolio Balancing (PMO-00.02).
+
+{Colors.BOLD}• Gate 1: Business Case & Justification (Phase 01){Colors.ENDC}
+  Approves financial justification, benefits realization plan, and organizational feasibility.
+  Deliverables: Business Case (PMO-01.01), Cost-Benefit Analysis (PMO-01.02).
+
+{Colors.BOLD}• Gate 2: Project Charter Authorization (Phase 03){Colors.ENDC}
+  Formally grants the Project Manager authority to commit enterprise resources.
+  Deliverables: Project Charter (PMO-03.01), Stakeholder Register (PMO-03.04).
+
+{Colors.BOLD}• Gate 3: Integrated Baseline Approval (Phase 04){Colors.ENDC}
+  Locks Scope Baseline, Schedule Baseline, Budget Baseline, and Risk Registers before execution.
+  Deliverables: Scope Baseline (PMO-04.02.01), Schedule (PMO-04.03.01), Budget (PMO-04.04.01).
+
+{Colors.BOLD}• Gate 4: Operational Readiness & User Acceptance (Phase 05/06){Colors.ENDC}
+  Validates deliverable acceptance, UAT sign-off, training, and operational handover readiness.
+  Deliverables: UAT Sign-off (PMO-06.15), Operational Handover Plan (PMO-05.11).
+
+{Colors.BOLD}• Gate 5: Handover, Benefits Realization & Closeout (Phase 07){Colors.ENDC}
+  Final administrative closeout, lessons learned archiving, and contract termination.
+  Deliverables: Project Closeout Report (PMO-07.01), Lessons Learned (PMO-07.03).
+""")
+
+    elif topic == "eva":
+        print(f"""{Colors.BOLD}EARNED VALUE ANALYSIS (EVA) MATHEMATICAL SPECIFICATION{Colors.ENDC}
+Tasleemat includes an exact analytical Earned Value computation engine:
+
+{Colors.BOLD}1. Core Input Parameters:{Colors.ENDC}
+  • {Colors.OKCYAN}PV (Planned Value):{Colors.ENDC} Budgeted cost of work scheduled.
+  • {Colors.OKCYAN}EV (Earned Value):{Colors.ENDC} Budgeted cost of work performed.
+  • {Colors.OKCYAN}AC (Actual Cost):{Colors.ENDC} Actual cost incurred for work performed.
+  • {Colors.OKCYAN}BAC (Budget at Completion):{Colors.ENDC} Total baseline project budget.
+
+{Colors.BOLD}2. Variances (Positive = Good, Negative = Alert):{Colors.ENDC}
+  • {Colors.BOLD}Cost Variance (CV):{Colors.ENDC}      CV = EV - AC
+  • {Colors.BOLD}Schedule Variance (SV):{Colors.ENDC}  SV = EV - PV
+
+{Colors.BOLD}3. Performance Indices (1.0 = On Target, > 1.0 = Ahead, < 1.0 = Behind):{Colors.ENDC}
+  • {Colors.BOLD}Cost Performance Index (CPI):{Colors.ENDC}     CPI = EV / AC
+  • {Colors.BOLD}Schedule Performance Index (SPI):{Colors.ENDC} SPI = EV / PV
+
+{Colors.BOLD}4. Forecasting & Estimates:{Colors.ENDC}
+  • {Colors.BOLD}Estimate at Completion (EAC):{Colors.ENDC}
+    - Typical future variance:     EAC = BAC / CPI
+    - Atypical future variance:    EAC = AC + (BAC - EV)
+    - CPI & SPI composite effect:  EAC = AC + ((BAC - EV) / (CPI * SPI))
+  • {Colors.BOLD}Estimate to Complete (ETC):{Colors.ENDC}       ETC = EAC - AC
+  • {Colors.BOLD}Variance at Completion (VAC):{Colors.ENDC}     VAC = BAC - EAC
+  • {Colors.BOLD}To-Complete Index (TCPI):{Colors.ENDC}         TCPI = (BAC - EV) / (BAC - AC)
+""")
+
+    elif topic == "mcp":
+        print(f"""{Colors.BOLD}MODEL CONTEXT PROTOCOL (MCP) AGENT INTEGRATION{Colors.ENDC}
+Tasleemat exposes all 114 deliverables, governance tools, and auditor functions directly to AI agents.
+
+{Colors.BOLD}1. Starting the Server Locally:{Colors.ENDC}
+  {Colors.OKGREEN}tasleemat mcp{Colors.ENDC}  (or: {Colors.OKGREEN}python -m tasleemat.mcp.server{Colors.ENDC})
+
+{Colors.BOLD}2. Configuration for Cursor (`~/.cursor/mcp.json`):{Colors.ENDC}
+  {{
+    "mcpServers": {{
+      "tasleemat": {{
+        "command": "tasleemat",
+        "args": ["mcp"]
+      }}
+    }}
+  }}
+
+{Colors.BOLD}3. Configuration for Claude Desktop (`claude_desktop_config.json`):{Colors.ENDC}
+  {{
+    "mcpServers": {{
+      "tasleemat": {{
+        "command": "tasleemat",
+        "args": ["mcp"]
+      }}
+    }}
+  }}
+
+{Colors.BOLD}4. Exposed MCP Agent Tools:{Colors.ENDC}
+  • {Colors.OKGREEN}tasleemat_list_artifacts:{Colors.ENDC} Filter and discover deliverables by phase, tier, or pack.
+  • {Colors.OKGREEN}tasleemat_get_artifact:{Colors.ENDC} Fetch template, guide, example, schema, or AI prompt.
+  • {Colors.OKGREEN}tasleemat_audit_project:{Colors.ENDC} Run full Stage-Gate & schema governance verification.
+  • {Colors.OKGREEN}tasleemat_calculate_eva:{Colors.ENDC} Real-time mathematical Earned Value computation.
+  • {Colors.OKGREEN}tasleemat_search_lexicon:{Colors.ENDC} Bilingual PMO terminology and standards dictionary.
+""")
+
+    elif topic == "catalog":
+        print(f"""{Colors.BOLD}MASTER 114 DELIVERABLE CATALOG INDEX{Colors.ENDC}
+Divided across 8 standardized lifecycle phases:
+  • {Colors.BOLD}Phase 00: Program & Portfolio Management{Colors.ENDC} (PMO-00.01 to PMO-00.06 — 6 Forms)
+  • {Colors.BOLD}Phase 01: Business & Value Delivery{Colors.ENDC} (PMO-01.01 to PMO-01.04 — 4 Forms)
+  • {Colors.BOLD}Phase 02: Project Approach & Tailoring{Colors.ENDC} (PMO-02.01 to PMO-02.06 — 6 Forms)
+  • {Colors.BOLD}Phase 03: Initiating{Colors.ENDC} (PMO-03.01 to PMO-03.05 — 5 Forms)
+  • {Colors.BOLD}Phase 04: Planning{Colors.ENDC} (PMO-04.01.01 to PMO-04.13.01 — 55 Forms)
+  • {Colors.BOLD}Phase 05: Executing{Colors.ENDC} (PMO-05.01 to PMO-05.15 — 15 Forms)
+  • {Colors.BOLD}Phase 06: Monitoring & Controlling{Colors.ENDC} (PMO-06.01 to PMO-06.16 — 16 Forms)
+  • {Colors.BOLD}Phase 07: Closing{Colors.ENDC} (PMO-07.01 to PMO-07.07 — 7 Forms)
+
+Run {Colors.OKGREEN}tasleemat list --lang en{Colors.ENDC} or {Colors.OKGREEN}tasleemat list --lang ar{Colors.ENDC} to display the complete 114-item table.
+""")
+
+    elif topic == "lexicon":
+        print(f"""{Colors.BOLD}BILINGUAL PMO LEXICON DICTIONARY{Colors.ENDC}
+Tasleemat maintains a 100% synchronized English/Arabic project management terminology standard:
+  • {Colors.BOLD}Project Charter{Colors.ENDC} ↔ ميثاق المشروع
+  • {Colors.BOLD}Work Breakdown Structure (WBS){Colors.ENDC} ↔ هيكل تجزئة العمل
+  • {Colors.BOLD}Earned Value Analysis (EVA){Colors.ENDC} ↔ تحليل القيمة المكتسبة
+  • {Colors.BOLD}Cost Performance Index (CPI){Colors.ENDC} ↔ مؤشر أداء التكلفة
+  • {Colors.BOLD}Schedule Performance Index (SPI){Colors.ENDC} ↔ مؤشر أداء الجدول الزمني
+  • {Colors.BOLD}Stage-Gate Review{Colors.ENDC} ↔ مراجعة بوابات المراحل
+  • {Colors.BOLD}Risk Register{Colors.ENDC} ↔ سجل المخاطر
+  • {Colors.BOLD}Scope Baseline{Colors.ENDC} ↔ الخط المرجعي للنطاق
+  • {Colors.BOLD}Benefits Realization Plan{Colors.ENDC} ↔ خطة تحقيق المنافع
+  • {Colors.BOLD}Lessons Learned Register{Colors.ENDC} ↔ سجل الدروس المستفادة
+
+Search terms interactively via:
+  {Colors.OKGREEN}tasleemat search "Risk" --lang en{Colors.ENDC}
+  {Colors.OKGREEN}tasleemat search "ميثاق" --lang ar{Colors.ENDC}
+""")
+
+def show_man_page(target=None):
+    """Display comprehensive UNIX-style manual page with pager support."""
+    man_file = ROOT / "docs" / "tasleemat.1"
+    if not target and man_file.exists() and shutil.which("man"):
+        try:
+            subprocess.run(["man", str(man_file)])
+            return
+        except Exception:
+            pass
+
+    if target:
+        print_comprehensive_help(target)
+        return
+
+    # Fallback to rich terminal output
+    print_comprehensive_help()
+
 def print_comprehensive_help(target_cmd=None):
     """Print complete, comprehensive CLI help listing all commands, flags, arguments, choices, and examples."""
     header = f"{Colors.HEADER}{Colors.BOLD}================================================================================{Colors.ENDC}\n"
@@ -592,7 +881,9 @@ def print_comprehensive_help(target_cmd=None):
 
     usage = f"{Colors.BOLD}USAGE:{Colors.ENDC}\n"
     usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} <command> [options] [arguments]\n"
-    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} --help | -h | help [subcommand]\n\n"
+    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} --help | -h | help [subcommand]\n"
+    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} docs [airgap|tiers|packs|gates|eva|mcp|catalog|lexicon]\n"
+    usage += f"  {Colors.OKBLUE}tasleemat{Colors.ENDC} man [command]\n\n"
 
     cmds = {
         "init": {
@@ -608,7 +899,41 @@ def print_comprehensive_help(target_cmd=None):
                 ("-l, --lang {ar,en,both}", "Deliverable language selection (Default: both)"),
                 ("-o, --out PATH", "Target output directory (Default: ./<code_Workspace>)")
             ],
+            "airgap": "100% offline capable. All deliverable templates and metadata are copied from local package assets.",
             "example": "tasleemat init --tier 2 --pack agile --lang ar --name 'منصة التحول الرقمي' --code 'PRJ-2026-01'"
+        },
+        "audit": {
+            "title": "audit — Audit and verify a project workspace against PMO governance tiers",
+            "desc": "Inspects project deliverables, calculates governance KPIs, progress percentage, Stage-Gate readiness, and Draft 2020-12 schema validation.",
+            "args": [
+                ("path PATH", "Path to project directory (Default: current directory)"),
+                ("-t, --tier {1,2,3}", "Override governance tier (Default: auto-detect from project)"),
+                ("-p, --pack {general,agile,ai,predictive,hybrid}", "Override methodology pack (Default: auto-detect)"),
+                ("--strict", "Exit with code 1 if any deliverable is missing or schema validation fails"),
+                ("--no-schema", "Skip deep JSON schema verification"),
+                ("--json", "Output audit report as structured JSON for CI/CD"),
+                ("-o, --out PATH", "Save JSON audit report to target file")
+            ],
+            "airgap": "Zero network calls required. Draft 2020-12 JSON schemas are validated locally.",
+            "example": "tasleemat audit ./projects/PRJ-01 --tier 2 --pack agile --strict"
+        },
+        "docs": {
+            "title": "docs — Display built-in offline documentation and knowledge guides",
+            "desc": "Provides comprehensive offline reference manuals covering airgapped usage, governance tiers, packs, stage-gates, and EVA math.",
+            "args": [
+                ("topic TEXT", "Topic: airgap, tiers, packs, gates, eva, mcp, catalog, lexicon (Default: list topics)")
+            ],
+            "airgap": "Fully offline. Requires zero internet connectivity.",
+            "example": "tasleemat docs airgap"
+        },
+        "man": {
+            "title": "man — Render comprehensive Unix-style manual pages",
+            "desc": "Displays formatted UNIX man reference manual with system pager or stdout.",
+            "args": [
+                ("command TEXT", "Optional specific command to display manual page for")
+            ],
+            "airgap": "Fully offline.",
+            "example": "tasleemat man init"
         },
         "list": {
             "title": "list — List all available project management forms & templates",
@@ -616,6 +941,7 @@ def print_comprehensive_help(target_cmd=None):
             "args": [
                 ("-l, --lang {ar,en}", "Catalog language filter (Default: en)")
             ],
+            "airgap": "Reads from bundled offline package catalog.",
             "example": "tasleemat list --lang en"
         },
         "search": {
@@ -625,19 +951,8 @@ def print_comprehensive_help(target_cmd=None):
                 ("query TEXT", "Search keyword or code (e.g., 'Risk', 'Charter', 'ميثاق', 'PMO-03.01')"),
                 ("-l, --lang {ar,en}", "Search catalog language (Default: en)")
             ],
+            "airgap": "Searches local offline catalog index.",
             "example": "tasleemat search 'Risk' --lang en"
-        },
-        "config": {
-            "title": "config — Manage default LLM AI provider & API credentials",
-            "desc": "Saves or displays LLM credentials at ~/.tasleemat/config.json for automated AI drafting.",
-            "args": [
-                ("action {set,show}", "Configuration action to perform (Default: show)"),
-                ("--provider {gemini,openai,anthropic,openrouter,custom,ollama,mock}", "LLM AI Provider selection"),
-                ("--model TEXT", "Model ID (e.g., 'gemini-2.5-flash', 'gpt-4o', 'anthropic/claude-3.5-sonnet', 'deepseek/deepseek-r1')"),
-                ("--key TEXT", "API Key string"),
-                ("--endpoint TEXT", "Custom Endpoint URL (e.g. https://openrouter.ai/api/v1 or http://localhost:11434)")
-            ],
-            "example": "tasleemat config set --provider openrouter --model anthropic/claude-3.5-sonnet --key 'YOUR_KEY'"
         },
         "generate": {
             "title": "generate — Auto-fill PMO artifact using LLM AI client",
@@ -652,13 +967,21 @@ def print_comprehensive_help(target_cmd=None):
                 ("-o, --out PATH", "Output Markdown file path"),
                 ("--mock", "Run mock generation offline without calling API APIs")
             ],
-            "example": "tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --out ./Project_Charter.md"
+            "airgap": "Use --provider ollama with local endpoint or --mock for 100% offline airgapped drafting.",
+            "example": "tasleemat generate --form PMO-03.01 --notes ./meeting_notes.txt --mock --out ./Project_Charter.md"
         },
-        "mcp": {
-            "title": "mcp — Run Model Context Protocol server over stdio",
-            "desc": "Runs the official MCP server exposing all 114 deliverables, schemas, and governance tools to AI agents.",
-            "args": [],
-            "example": "tasleemat mcp"
+        "config": {
+            "title": "config — Manage default LLM AI provider & API credentials",
+            "desc": "Saves or displays LLM credentials at ~/.tasleemat/config.json for automated AI drafting.",
+            "args": [
+                ("action {set,show}", "Configuration action to perform (Default: show)"),
+                ("--provider {gemini,openai,anthropic,openrouter,custom,ollama,mock}", "LLM AI Provider selection"),
+                ("--model TEXT", "Model ID (e.g., 'gemini-2.5-flash', 'gpt-4o', 'anthropic/claude-3.5-sonnet', 'deepseek-r1')"),
+                ("--key TEXT", "API Key string"),
+                ("--endpoint TEXT", "Custom Endpoint URL (e.g. http://localhost:11434 for Ollama)")
+            ],
+            "airgap": "Stores settings locally in ~/.tasleemat/config.json.",
+            "example": "tasleemat config set --provider ollama --model deepseek-r1 --endpoint http://localhost:11434"
         },
         "tui": {
             "title": "tui — Launch interactive Bilingual Terminal User Interface (TUI)",
@@ -666,21 +989,15 @@ def print_comprehensive_help(target_cmd=None):
             "args": [
                 ("-l, --lang {ar,en}", "Default interface language (Default: en)")
             ],
+            "airgap": "Zero web dependencies. Uses terminal ANSI escape sequences and bundled Arabic text shaping.",
             "example": "tasleemat tui --lang ar"
         },
-        "audit": {
-            "title": "audit — Audit and verify a project workspace against PMO governance tiers",
-            "desc": "Inspects project deliverables, calculates governance KPIs, progress percentage, Stage-Gate readiness, and Draft 2020-12 schema validation.",
-            "args": [
-                ("path PATH", "Path to project directory (Default: current directory)"),
-                ("-t, --tier {1,2,3}", "Override governance tier (Default: auto-detect from project)"),
-                ("-p, --pack {general,agile,ai,predictive,hybrid}", "Override methodology pack (Default: auto-detect)"),
-                ("--strict", "Exit with code 1 if any deliverable is missing or schema validation fails"),
-                ("--no-schema", "Skip deep JSON schema verification"),
-                ("--json", "Output audit report as structured JSON for CI/CD"),
-                ("-o, --out PATH", "Save JSON audit report to target file")
-            ],
-            "example": "tasleemat audit ./projects/PRJ-01 --tier 2 --pack agile --strict"
+        "mcp": {
+            "title": "mcp — Run Model Context Protocol server over stdio",
+            "desc": "Runs the official MCP server exposing all 114 deliverables, schemas, and governance tools to AI agents.",
+            "args": [],
+            "airgap": "Runs over standard input/output (stdio) with zero network sockets or external ports.",
+            "example": "tasleemat mcp"
         },
         "test": {
             "title": "test — Run complete automated test suite",
@@ -688,6 +1005,7 @@ def print_comprehensive_help(target_cmd=None):
             "args": [
                 ("-v, --verbose", "Enable verbose detailed test output")
             ],
+            "airgap": "Runs entirely against local bundled assets.",
             "example": "tasleemat test -v"
         },
         "help": {
@@ -696,6 +1014,7 @@ def print_comprehensive_help(target_cmd=None):
             "args": [
                 ("subcommand TEXT", "Optional: Specific subcommand to view help for (e.g., init, generate)")
             ],
+            "airgap": "Fully offline.",
             "example": "tasleemat help init"
         }
     }
@@ -708,10 +1027,18 @@ def print_comprehensive_help(target_cmd=None):
         out += f"  {Colors.BOLD}Arguments & Options:{Colors.ENDC}\n"
         for opt, opt_desc in info["args"]:
             out += f"    {Colors.OKGREEN}{opt:<36}{Colors.ENDC} {opt_desc}\n"
+        if "airgap" in info:
+            out += f"\n  {Colors.BOLD}Airgapped & Offline Environment Note:{Colors.ENDC}\n"
+            out += f"    {Colors.WARNING}{info['airgap']}{Colors.ENDC}\n"
         out += f"\n  {Colors.BOLD}Example:{Colors.ENDC}\n"
         out += f"    {Colors.OKBLUE}{info['example']}{Colors.ENDC}\n\n"
         print(out)
         return
+
+    airgap_banner = f"{Colors.BOLD}OFFLINE & AIRGAPPED ENVIRONMENT READY:{Colors.ENDC}\n"
+    airgap_banner += f"  • 100% self-contained wheel package with zero telemetry.\n"
+    airgap_banner += f"  • All 114 bilingual deliverables, schemas, and guides are bundled locally.\n"
+    airgap_banner += f"  • Run {Colors.OKGREEN}tasleemat docs airgap{Colors.ENDC} to view the full airgapped deployment handbook.\n\n"
 
     commands_detail = f"{Colors.BOLD}AVAILABLE COMMANDS & DETAILED ARGUMENTS:{Colors.ENDC}\n\n"
     body = ""
@@ -723,12 +1050,42 @@ def print_comprehensive_help(target_cmd=None):
             body += f"    {Colors.OKGREEN}{opt:<36}{Colors.ENDC} {opt_desc}\n"
         body += f"  {Colors.BOLD}Example:{Colors.ENDC} {Colors.OKBLUE}{info['example']}{Colors.ENDC}\n\n"
 
-    print(header + usage + commands_detail + body)
+    footer = f"{Colors.BOLD}LINKS & COMMUNITY:{Colors.ENDC}\n"
+    footer += f"  🌐 Live Documentation Portal : {Colors.OKBLUE}https://fakhr.me/Tasleemat{Colors.ENDC}\n"
+    footer += f"  👨‍💻 Author Website            : {Colors.OKBLUE}https://fakhr.me{Colors.ENDC}\n"
+    footer += f"  📂 GitHub Repository         : {Colors.OKBLUE}https://github.com/fakhruldeen/Tasleemat{Colors.ENDC}\n"
+    footer += f"  📦 PyPI Package              : {Colors.OKBLUE}https://pypi.org/project/tasleemat/{Colors.ENDC}\n\n"
+
+    print(header + usage + airgap_banner + commands_detail + body + footer)
 
 def main():
-    if len(sys.argv) > 1 and sys.argv[1] in ["-h", "--help", "help"]:
-        subcmd = sys.argv[2] if len(sys.argv) > 2 else None
+    argv = sys.argv[1:]
+    if not argv:
+        print_comprehensive_help()
+        sys.exit(0)
+
+    # 1. Immediate Help Interception (-h, --help, help)
+    if argv[0] in ["-h", "--help", "help"]:
+        subcmd = argv[1] if len(argv) > 1 and not argv[1].startswith("-") else None
         print_comprehensive_help(subcmd)
+        sys.exit(0)
+
+    # Subcommand help interception (e.g. `tasleemat init -h` or `tasleemat audit --help`)
+    if len(argv) > 1 and any(arg in ["-h", "--help"] for arg in argv[1:]):
+        subcmd = argv[0]
+        print_comprehensive_help(subcmd)
+        sys.exit(0)
+
+    # 2. Offline Documentation Guides
+    if argv[0] in ["docs", "doc"]:
+        topic = argv[1] if len(argv) > 1 and not argv[1].startswith("-") else None
+        show_offline_docs(topic)
+        sys.exit(0)
+
+    # 3. Unix Man Page
+    if argv[0] in ["man", "--man"]:
+        target = argv[1] if len(argv) > 1 and not argv[1].startswith("-") else None
+        show_man_page(target)
         sys.exit(0)
 
     parser = argparse.ArgumentParser(description="Tasleemat PMO Operating System CLI & AI Generator", add_help=False)
@@ -759,7 +1116,7 @@ def main():
     config_parser = subparsers.add_parser("config", help="Manage default LLM provider & credentials")
     config_parser.add_argument("action", choices=["set", "list", "show"], default="show", nargs="?", help="Action: set or show")
     config_parser.add_argument("--provider", choices=["gemini", "openai", "anthropic", "openrouter", "custom", "ollama", "mock"], help="LLM Provider")
-    config_parser.add_argument("--model", help="Model ID (e.g. gemini-2.5-flash, gpt-4o, anthropic/claude-3.5-sonnet, deepseek/deepseek-r1)")
+    config_parser.add_argument("--model", help="Model ID (e.g. gemini-2.5-flash, gpt-4o, anthropic/claude-3.5-sonnet, deepseek-r1)")
     config_parser.add_argument("--key", help="API Key")
     config_parser.add_argument("--endpoint", help="Custom Endpoint URL")
 
@@ -798,6 +1155,14 @@ def main():
     audit_parser.add_argument("--json", action="store_true", help="Output audit report as structured JSON")
     audit_parser.add_argument("-o", "--out", help="Save JSON report to file")
 
+    # docs command
+    docs_parser = subparsers.add_parser("docs", help="Browse offline documentation and knowledge guides")
+    docs_parser.add_argument("topic", nargs="?", help="Documentation topic (airgap, tiers, packs, gates, eva, mcp, catalog, lexicon)")
+
+    # man command
+    man_parser = subparsers.add_parser("man", help="Display UNIX man reference manual")
+    man_parser.add_argument("target", nargs="?", help="Optional command or topic")
+
     # help command
     help_parser = subparsers.add_parser("help", help="Display complete CLI help manual")
     help_parser.add_argument("subcommand", nargs="?", help="Optional subcommand for specific help")
@@ -820,6 +1185,10 @@ def main():
         run_tests(args)
     elif args.command == "audit":
         audit_project_cli(args)
+    elif args.command == "docs":
+        show_offline_docs(getattr(args, "topic", None))
+    elif args.command == "man":
+        show_man_page(getattr(args, "target", None))
     elif args.command == "mcp":
         from tasleemat.mcp.server import main as mcp_main
         sys.exit(mcp_main())
@@ -836,4 +1205,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

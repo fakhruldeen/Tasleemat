@@ -1432,8 +1432,9 @@ def render_html_page(
   <header class="site-header" role="banner">
     <div class="container nav-wrapper">
       <a href="{home_url}" class="brand-group" aria-label="{brand_name}">
-        <span>📦 {brand_name}</span>
-        <span class="brand-badge">v2.6.1</span>
+        <img src="{base_url}/img/logo-sq.png" alt="Tasleemat Logo" width="28" height="28" style="vertical-align: middle; border-radius: 6px; margin-inline-end: 8px;">
+        <span>{brand_name}</span>
+        <span class="brand-badge">v2.6.2</span>
       </a>
       
       <nav class="nav-menu-wrapper" role="navigation" aria-label="Main Navigation">
@@ -1452,8 +1453,8 @@ def render_html_page(
         <a href="https://github.com/fakhruldeen/Tasleemat" target="_blank" rel="noopener" class="btn-utility" aria-label="GitHub Repository" title="GitHub Repository" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.45rem 0.6rem;">
           <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9 1.48 1.35.39.24.96.2 1.44.15 0 .69.01 1.25.01 1.44 0 .21-.15.46-.55.38A8.01 8.01 0 0 1 0 8c0-4.42 3.58-8 8-8z"/></svg>
         </a>
-        <a href="https://fakhruldeen.github.io" target="_blank" rel="noopener" class="header-author-link" aria-label="Mohamed Fouad Fakhruldeen Website" title="Mohamed Fouad Fakhruldeen (fakhruldeen.github.io)">
-          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fouad Fakhruldeen" class="header-avatar" loading="lazy" />
+        <a href="https://fakhruldeen.github.io" target="_blank" rel="noopener" class="header-author-link" aria-label="Mohamed Fakhruldeen Website" title="Mohamed Fakhruldeen (fakhr.me)">
+          <img src="https://avatars.githubusercontent.com/u/1162549?v=4" alt="Mohamed Fakhruldeen" class="header-avatar" loading="lazy" />
         </a>
       </div>
     </div>

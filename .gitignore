@@ -42,3 +42,6 @@ test_workspace/
 
 # Local User Acceptance Testing (never synced)
 UAT/
+
+# Local binaries
+mcp-publisher

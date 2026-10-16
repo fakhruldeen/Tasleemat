@@ -3,7 +3,7 @@
   "name": "tasleemat-pmo-framework",
   "title": "Tasleemat: Enterprise Bilingual (English & Arabic) Project Management Framework",
   "description": "Complete open, machine-readable Project Management Office (PMO) artifact library with 114 bilingual deliverable JSON schemas conforming to PMI PMBOK® 6th, 7th & 8th Edition standards and the Open Knowledge Foundation (OKF) Frictionless Data specification.",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "homepage": "https://github.com/fakhruldeen/Tasleemat",
   "licenses": [
     {

@@ -8,16 +8,20 @@ type: Overview
 <div align="center">
 
 <p align="center">
-  <img src="docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="340">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/Readme.jpeg" alt="Tasleemat PMO Operating System Banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="300">
 </p>
 
 # 🚀 Tasleemat (تسليمات)
-### *The Production-Grade, Bilingual PMO Artifact & AI Toolkit*
+### *The Production-Grade, Bilingual PMO Operating System, Interactive TUI Workstation, MCP Server & Governance Auditor*
 **114 Standardized Deliverables • 228 English & Arabic Bundles • 6 Stage-Gates • 3 Governance Tiers**  
-*Fully Aligned with PMI PMBOK® (6th, 7th & 8th Edition Ready), ISO 21500 / 21502 & NIST AI RMF*
+*Fully Aligned with PMI PMBOK® (6th, 7th & 8th Edition Ready), ISO 21500 / 21502, Saudi DGA & NIST AI RMF*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.2-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package"></a>
   <a href="TECHNICAL.md#1-tasleemat-cli-scaffolder--terminal-user-interface-tui"><img src="https://img.shields.io/badge/🖥️_Terminal_TUI-Interactive_Workstation-0f766e?style=for-the-badge" alt="Terminal TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_MCP_Server-Standard_Protocol-7c3aed?style=for-the-badge" alt="MCP Server"></a>
   <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_Interactive_Portal-Live_Demo-006a61?style=for-the-badge" alt="Live Portal"></a>
@@ -31,6 +35,7 @@ type: Overview
 
 <p align="center">
   <b><a href="https://fakhr.me/Tasleemat/">🌐 Live Web Portal</a></b> • 
+  <b><a href="https://fakhr.me">👨‍💻 Mohamed Fakhruldeen (Author)</a></b> • 
   <b><a href="docs/MCP_INTEGRATION.md">⚡ MCP Server (Claude/Cursor)</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/catalog/en/index.html">📋 Browse 114 Templates</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/governance.html">🚪 6 Stage-Gates</a></b> • 
@@ -42,6 +47,7 @@ type: Overview
 ---
 
 </div>
+
 
 ## 💡 Why Tasleemat?
 
@@ -198,12 +204,24 @@ print(f"Valid: {report.valid}, Warnings: {len(report.warnings)}")
 tasleemat.render_artifact("PMO-03.01", lang="en", out_path="./charter.html")
 ```
 
-### Option 3: Automate via CLI Scaffolder
+### Option 3: Automate via CLI Scaffolder, Offline Docs & Man Pages
 Scaffold an entire project governance directory with customized templates:
 ```bash
 # Interactive wizard or fast-track command
 tasleemat init --tier 2 --pack agile --lang ar --out ./My_Project
+
+# Comprehensive help and manual for any command
+tasleemat --help
+tasleemat init --help
+
+# Built-in offline documentation and knowledge base (airgapped ready)
+tasleemat docs airgap      # Airgapped & zero-telemetry handbook
+tasleemat docs tiers       # Governance tiers deep-dive
+tasleemat docs gates       # 6 Stage-Gates criteria & RACI checklists
+tasleemat docs eva         # Mathematical Earned Value formulas
+tasleemat man              # Standard Unix-style manual page
 ```
+
 
 ### Option 4: Clone & Use Native Markdown Directly in GitHub
 All deliverables are plain, clean Markdown files. You can clone the repo and use them directly in VS Code, Obsidian, Notion, or Confluence:

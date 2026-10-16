@@ -15,6 +15,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.6.2] - 2026-10-17 — Offline Airgapped Documentation, UNIX Man Pages, Brand Identity & PyPI Discoverability
+
+### 📚 Comprehensive Offline Knowledge Base & Documentation (`tasleemat docs`)
+- **Airgapped Operations Handbook (`tasleemat docs airgap`):** Complete guide for zero-telemetry installations, offline wheel deployment via `pip install --no-index --find-links`, local LLM inference (Ollama, vLLM, mock mode), and local Draft 2020-12 schema validation.
+- **Deep-Dive Knowledge Guides:** Added 9 integrated offline topics accessible with zero network connectivity: `airgap`, `tiers` (governance sizing matrix), `packs` (5 methodology packs), `gates` (6 Stage-Gates criteria & RACI), `eva` (mathematical Earned Value formulas), `mcp` (AI agent orchestration), `catalog` (114 deliverables directory), `lexicon` (bilingual dictionary), and `cli` (command manual).
+
+### 📖 Standard UNIX Man Pages (`tasleemat man` & `docs/tasleemat.1`)
+- **System Man Integration:** Created official troff/groff manual page `docs/tasleemat.1` compatible with standard Linux/Unix `man ./docs/tasleemat.1`.
+- **Interactive Terminal Viewer:** `tasleemat man [command]` launches with interactive pager support (`less -R`).
+
+### ⚡ Enhanced CLI Help System (`--help` / `-h`)
+- **Dynamic Color Configuration:** Added automatic `NO_COLOR` and non-tty detection for clean piping and automated logging.
+- **Subcommand Manuals:** Upgraded root and subcommand help (`tasleemat init -h`, `tasleemat audit -h`) with rich parameter tables, airgap notes, and real-world examples.
+
+### 🎨 Visual Identity & PyPI Discoverability
+- **Brand Assets:** Integrated high-resolution architecture overview banner (`Readme.jpeg`), square package logo (`logo-sq.png`), unified brand logo (`logo.png`), and social preview cards (`social.jpeg`).
+- **PyPI Showcase:** Enhanced package metadata in `setup.py` with custom logo rendering, author profile (Mohamed Fakhruldeen), verified URLs (`fakhr.me` & `fakhr.me/Tasleemat`), search keywords, and 29 validated Trove classifiers.
+
+---
+
 ## [2.6.1] - 2026-10-16 — 100% Tailoring Matrix Coverage, Native MCP Project Auditor & Modern Packaging
 
 ### 🎯 100% Tailoring Matrix Coverage (Zero Unmapped Deliverables)

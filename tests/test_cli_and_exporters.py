@@ -130,5 +130,66 @@ class TestCliAndExporters(unittest.TestCase):
             html_files = list(test_sub.glob("*.html"))
             self.assertGreater(len(html_files), 0)
 
+    def test_cli_comprehensive_help_and_subcommands(self):
+        """Test top-level and subcommand help (-h, --help)."""
+        res_help = subprocess.run(
+            [sys.executable, str(CLI_PATH), "-h"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_help.returncode, 0)
+        self.assertIn("Tasleemat PMO Operating System CLI", res_help.stdout)
+        self.assertIn("OFFLINE & AIRGAPPED ENVIRONMENT READY", res_help.stdout)
+        self.assertIn("init", res_help.stdout)
+        self.assertIn("audit", res_help.stdout)
+        self.assertIn("docs", res_help.stdout)
+
+        # Subcommand specific help: tasleemat init -h
+        res_init_h = subprocess.run(
+            [sys.executable, str(CLI_PATH), "init", "-h"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_init_h.returncode, 0)
+        self.assertIn("init — Scaffold a new tailored project workspace", res_init_h.stdout)
+        self.assertIn("Airgapped & Offline Environment Note", res_init_h.stdout)
+        self.assertIn("--tier", res_init_h.stdout)
+
+    def test_cli_offline_docs_and_man(self):
+        """Test offline docs command and man page rendering."""
+        res_docs = subprocess.run(
+            [sys.executable, str(CLI_PATH), "docs"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_docs.returncode, 0)
+        self.assertIn("Available Offline Documentation Topics", res_docs.stdout)
+        self.assertIn("airgap", res_docs.stdout)
+        self.assertIn("eva", res_docs.stdout)
+
+        # Airgap topic
+        res_airgap = subprocess.run(
+            [sys.executable, str(CLI_PATH), "docs", "airgap"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_airgap.returncode, 0)
+        self.assertIn("AIRGAPPED & ZERO-TELEMETRY ARCHITECTURE", res_airgap.stdout)
+        self.assertIn("OFFLINE INSTALLATION IN ISOLATED NETWORKS", res_airgap.stdout)
+
+        # EVA math topic
+        res_eva = subprocess.run(
+            [sys.executable, str(CLI_PATH), "docs", "eva"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_eva.returncode, 0)
+        self.assertIn("EARNED VALUE ANALYSIS (EVA) MATHEMATICAL SPECIFICATION", res_eva.stdout)
+        self.assertIn("Cost Variance (CV)", res_eva.stdout)
+
+        # Man command
+        res_man = subprocess.run(
+            [sys.executable, str(CLI_PATH), "man", "init"],
+            capture_output=True, text=True, cwd=str(ROOT)
+        )
+        self.assertEqual(res_man.returncode, 0)
+        self.assertIn("init", res_man.stdout)
+
 if __name__ == "__main__":
     unittest.main()
+

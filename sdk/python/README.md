@@ -1,4 +1,29 @@
-# 🚀 Tasleemat (تسليمات) — Enterprise Bilingual PMO Operating System & Python SDK
+<div align="center">
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/Readme.jpeg" alt="Tasleemat PMO Operating System Banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo-sq.png" alt="Tasleemat PMO Toolkit Logo" width="180">
+</p>
+
+# 🚀 Tasleemat (تسليمات)
+### *The Production-Grade, Bilingual PMO Operating System, Interactive TUI Workstation, MCP Server & Governance Auditor*
+
+**114 Standardized Deliverables • 228 English & Arabic Bundles • 6 Stage-Gates • 3 Governance Tiers**  
+*Aligned with PMI PMBOK® (6th, 7th & 8th Edition Ready), ISO 21500 / 21502, Saudi DGA & NIST AI RMF*
+
+<p align="center">
+  <a href="https://fakhr.me/Tasleemat/"><b>🌐 Live Web Portal</b></a> • 
+  <a href="https://fakhr.me"><b>👨‍💻 Mohamed Fakhruldeen (Author)</b></a> • 
+  <a href="https://github.com/fakhruldeen/Tasleemat"><b>⭐ GitHub Repository</b></a> • 
+  <a href="https://fakhr.me/Tasleemat/catalog/en/index.html"><b>📋 114 Deliverables Catalog</b></a> • 
+  <a href="https://pypi.org/project/tasleemat/"><b>📦 PyPI Package</b></a>
+</p>
+
+---
+</div>
 
 <!-- mcp-name: io.github.fakhruldeen/tasleemat -->
 
@@ -18,7 +43,26 @@
 
 It provides **114 standardized, bilingual (English & Arabic) project management deliverables** (228 synchronized form bundles total) covering the complete project lifecycle—from strategic portfolio roadmaps and business cases to scope baselines, risk registers, stage-gate reviews, Earned Value Analysis (EVA), and project closeouts.
 
-With **Version 2.6.1**, Tasleemat delivers **100% Tailoring Matrix & Tier Pack Mapping** across all 114 deliverables, exposes the **Project Governance Auditor directly via MCP (`tasleemat_audit_project`)**, standardizes PEP 517/518 packaging with `pyproject.toml`, and refines multi-agent interoperability.
+With **Version 2.6.2**, Tasleemat delivers **Offline Documentation & UNIX Man Pages (`tasleemat docs` / `tasleemat man`)**, modernizes PyPI visual branding and discoverability with official package logos and classifiers, enriches airgapped operations with comprehensive guidebooks, and provides enhanced `--help` / `-h` reference across all commands.
+
+---
+
+## 🌟 What's New in v2.6.2
+
+- 📚 **Comprehensive Offline Knowledge Base & Documentation (`tasleemat docs [topic]`)**:
+  - Engineered for airgapped, classified, and zero-connectivity facilities with zero telemetry.
+  - 9 integrated offline knowledge guides: `airgap` (deployment handbook), `tiers` (governance sizing matrix), `packs` (5 methodology packs), `gates` (6 Stage-Gates criteria & RACI), `eva` (mathematical Earned Value formulas), `mcp` (agent orchestration), `catalog` (114 deliverables directory), `lexicon` (bilingual dictionary), and `cli` (command manual).
+
+- 📖 **Built-in UNIX Man Page (`tasleemat man` & `docs/tasleemat.1`)**:
+  - Full-featured terminal manual with interactive pager support (`less -R`) and official troff/groff source [`docs/tasleemat.1`](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/tasleemat.1).
+
+- ⚡ **Enhanced CLI Help System (`--help` / `-h`)**:
+  - Dynamic `NO_COLOR` compliance for clean logging and piping.
+  - Subcommand-specific rich manual pages (`tasleemat init -h`, `tasleemat audit -h`) with airgap notes, argument choices, and practical examples.
+
+- 🎨 **Visual Identity & PyPI Discoverability**:
+  - Integrated high-res hero banner (`Readme.jpeg`), square package logo (`logo-sq.png`), and official author profile ([fakhr.me](https://fakhr.me)).
+  - 29 validated Trove classifiers covering Natural Language (Arabic & English), AI, Console, and QA.
 
 ---
 
@@ -386,6 +430,31 @@ Tasleemat v2.4.0 establishes a clean, decoupled boundary for downstream AI agent
 
 ---
 
+## 🛡️ Built for Airgapped & Classified Environments (Zero Telemetry)
+
+Tasleemat is 100% self-contained and engineered specifically to empower project managers and engineers in airgapped, disconnected, or high-security facilities:
+
+- **Zero External Network Dependencies:** All 114 bilingual forms, 228 deliverable bundles, Draft 2020-12 JSON schemas, and bilingual lexicons are packaged directly inside the wheel.
+- **Offline Wheel Installation:**
+  ```bash
+  # Download once on connected gateway:
+  pip download tasleemat -d ./wheels
+  # Transfer to airgapped host and install without internet:
+  pip install --no-index --find-links ./wheels tasleemat
+  ```
+- **Built-in Offline Knowledge Base & UNIX Man Pages:**
+  ```bash
+  tasleemat docs airgap      # Comprehensive airgap operation handbook
+  tasleemat docs tiers       # Governance tiers deep-dive
+  tasleemat docs gates       # 6 Stage-Gates criteria & RACI checklists
+  tasleemat docs eva         # Mathematical Earned Value formulas
+  tasleemat man              # Standard Unix-style reference manual
+  tasleemat --help           # Complete parameter and command reference
+  ```
+- **Local AI & Mock Mode:** Run AI drafting via local Ollama (`http://localhost:11434`), vLLM, private OpenAI-compatible endpoints, or 100% offline mock mode (`--mock`).
+
+---
+
 ## 📜 Standards Alignment
 
 - **PMI PMBOK® Guide:** 6th, 7th & 8th Edition alignment.
@@ -396,15 +465,21 @@ Tasleemat v2.4.0 establishes a clean, decoupled boundary for downstream AI agent
 
 ---
 
-## 🔗 Links & Resources
+## 👨‍💻 About the Author & Project Links
 
-- **GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
-- **Interactive Web Portal:** [fakhr.me/Tasleemat](https://fakhr.me/Tasleemat/)
-- **Documentation:** [docs/README.md](https://github.com/fakhruldeen/Tasleemat/blob/main/docs/README.md)
-- **Zenodo DOI:** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
+Tasleemat is created, designed, and actively maintained by **Mohamed Fakhruldeen**:
+
+- 🌐 **Author Website:** [fakhr.me](https://fakhr.me)
+- 📚 **Official Documentation & Live Portal:** [fakhr.me/Tasleemat](https://fakhr.me/Tasleemat)
+- 📂 **GitHub Repository:** [github.com/fakhruldeen/Tasleemat](https://github.com/fakhruldeen/Tasleemat)
+- 📋 **114 Deliverables Interactive Explorer:** [fakhr.me/Tasleemat/catalog/en/index.html](https://fakhr.me/Tasleemat/catalog/en/index.html)
+- 🐛 **Bug Tracker & Feature Requests:** [github.com/fakhruldeen/Tasleemat/issues](https://github.com/fakhruldeen/Tasleemat/issues)
+- 📦 **PyPI Package Page:** [pypi.org/project/tasleemat](https://pypi.org/project/tasleemat/)
+- 🔬 **Zenodo Academic DOI:** [10.5281/zenodo.23193523](https://doi.org/10.5281/zenodo.23193523)
 
 ---
 
 <div align="center">
-  <sub>Open Source under <a href="https://opensource.org/licenses/MIT">MIT License</a>. Created and maintained by <a href="https://github.com/fakhruldeen">Fakhruldeen</a>.</sub>
+  <sub>Open Source under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. Created and maintained by <a href="https://fakhr.me">Mohamed Fakhruldeen</a>.</sub>
 </div>
+

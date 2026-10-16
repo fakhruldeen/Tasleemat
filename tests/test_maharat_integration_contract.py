@@ -92,7 +92,7 @@ class TestMaharatIntegrationContract(unittest.TestCase):
         self.assertIn("fingerprint", defn)
         self.assertEqual(len(defn["fingerprint"]), 64)  # SHA-256 length
 
-        self.assertEqual(tasleemat.__version__, "2.6.1")
+        self.assertEqual(tasleemat.__version__, "2.6.2")
 
     def test_criterion_4_validate_valid_structured_data(self):
         """Criterion 4: Validate valid structured data against companion data contract."""

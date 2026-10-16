@@ -7,19 +7,23 @@ type: Overview
 <div align="center">
 
 <p align="center">
-  <img src="docs/img/logo.png" alt="شعار مكتبة تسليمات" width="340">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/Readme.jpeg" alt="شعار ونظرة معمارية لنظام تسليمات" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo.png" alt="شعار مكتبة تسليمات" width="300">
 </p>
 
 # 🚀 مكتبة تسليمات لإدارة المشاريع (Tasleemat)
-### *المكتبة المؤسسية المعتمدة لنماذج ومخرجات إدارة المشاريع والذكاء الاصطناعي*
-**114 مخرجاً قياسياً • 228 حزمة ثنائية (عربي/إنجليزي) • 6 بوابات عبور حوكمية • 4 مستويات لتخصيص المشاريع**  
+### *المكتبة المؤسسية المعتمدة لنماذج ومخرجات إدارة المشاريع، بيئة الطرفية التفاعلية TUI، خادم MCP وأداة التدقيق الحوكمي*
+**114 مخرجاً قياسياً • 228 حزمة ثنائية (عربي/إنجليزي) • 6 بوابات عبور حوكمية • 3 مستويات لتخصيص المشاريع**  
 *متوافقة بالكامل مع الدليل المعرفي لإدارة المشاريع PMI PMBOK® (الإصدار 6 و7 والجاهزية لـ 8)، معايير أيزو ISO 21500 / 21502، وهيئة الحكومة الرقمية*
 
 <p align="center">
-  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.1-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
+  <a href="https://pypi.org/project/tasleemat/"><img src="https://img.shields.io/badge/📦_PyPI-v2.6.2-3775a9?style=for-the-badge&logo=pypi&logoColor=white" alt="حزمة PyPI"></a>
   <a href="TECHNICAL_AR.md#1-واجهة-الطرفية-التفاعلية-tui-وأداة-السطر-البرمجي-cli"><img src="https://img.shields.io/badge/🖥️_الطرفية_التفاعلية_TUI-بيئة_عمل_متكاملة-0f766e?style=for-the-badge" alt="الطرفية التفاعلية TUI"></a>
   <a href="docs/MCP_INTEGRATION.md"><img src="https://img.shields.io/badge/⚡_خادم_MCP-البروتوكول_المعياري-7c3aed?style=for-the-badge" alt="خادم MCP"></a>
-  <a href="https://fakhr.me/Tasleemat/README_AR.html"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>
+  <a href="https://fakhr.me/Tasleemat/"><img src="https://img.shields.io/badge/🌐_البوابة_التفاعلية-معاينة_حصرية-006a61?style=for-the-badge" alt="البوابة التفاعلية"></a>
   <a href="https://fakhr.me/Tasleemat/catalog/ar/index.html"><img src="https://img.shields.io/badge/📋_114_تسليمة-مستكشف_النماذج-059669?style=for-the-badge" alt="كتالوج النماذج"></a>
   <a href="README.md"><img src="https://img.shields.io/badge/🇬🇧_English_Version-LTR_Portal-1d4ed8?style=for-the-badge" alt="English Version"></a>
   <a href="https://github.com/fakhruldeen/Tasleemat/stargazers"><img src="https://img.shields.io/github/stars/fakhruldeen/Tasleemat?style=for-the-badge&color=eab308" alt="GitHub Stars"></a>
@@ -29,18 +33,19 @@ type: Overview
 [![tasleemat on DevHunt](https://devhunt.org/badge/tasleemat.svg)](https://devhunt.org/tool/tasleemat)
 
 <p align="center">
-  <b><a href="https://fakhr.me/Tasleemat/README_AR.html">🌐 البوابة الرقمية التفاعلية</a></b> • 
+  <b><a href="https://fakhr.me/Tasleemat/">🌐 البوابة الرقمية التفاعلية</a></b> • 
+  <b><a href="https://fakhr.me">👨‍💻 محمد فؤاد فخر الدين (المطور)</a></b> • 
   <b><a href="docs/MCP_INTEGRATION.md">⚡ خادم MCP لـ (Claude/Cursor)</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/catalog/ar/index.html">📋 تصفح 114 قالباً</a></b> • 
-  <b><a href="https://fakhr.me/Tasleemat/governance_ar.html">🚪 6 بوابات عبور حوكمية</a></b> • 
+  <b><a href="https://fakhr.me/Tasleemat/governance.html">🚪 6 بوابات عبور حوكمية</a></b> • 
   <b><a href="https://fakhr.me/Tasleemat/LEXICON.html">📖 معجم المصطلحات الموحد</a></b> • 
-  <b><a href="https://fakhr.me/Tasleemat/developer_ar.html">💻 دليل المطورين وCLI</a></b> • 
   <b><a href="README.md">🇬🇧 English Readme</a></b>
 </p>
 
 ---
 
 </div>
+
 
 ## 💡 لماذا صُممت تسليمات؟
 
@@ -196,12 +201,24 @@ print(f"صلاحية المسودة: {report.valid}, التنبيهات: {len(re
 tasleemat.render_artifact("PMO-03.01", lang="ar", out_path="./charter_ar.html")
 ```
 
-### 3. الأتمتة عبر أداة السطر البرمجي CLI
-توليد بيئة حوكمة المشروع تلقائياً عبر موجه الأوامر:
+### 3. الأتمتة والتوثيق دون إنترنت عبر موجه الأوامر CLI
+توليد بيئة حوكمة المشروع وتصفح التوثيق الشامل للشبكات المعزولة (Airgapped):
 ```bash
 # توليد حزمة مشروع قياسية للمستوى الثاني باللغة العربية
 tasleemat init --tier 2 --pack agile --lang ar --out ./مشروعي
+
+# طلب المساعدة الشاملة لأي أمر
+tasleemat --help
+tasleemat init --help
+
+# تصفح الأدلة المعرفية المدمجة دون اتصال بالإنترنت (للبيئات المعزولة)
+tasleemat docs airgap      # دليل التشغيل في البيئات المعزولة والمغلقة
+tasleemat docs tiers       # الدليل التفصيلي لمستويات الحوكمة
+tasleemat docs gates       # معايير بوابات العبور الست ومصفوفة RACI
+tasleemat docs eva         # المعادلات الرياضية لتحليل القيمة المكتسبة
+tasleemat man              # دليل صفحات man القياسي لأنظمة يونكس
 ```
+
 
 ### 4. النسخ والاستخدام المباشر داخل GitHub
 كافة القوالب مكتوبة بلغة ماركداون نظيفة وجاهزة للاستخدام في Notion أو Obsidian أو Confluence:

@@ -1,0 +1,195 @@
+.TH TASLEEMAT 1 "October 2026" "Tasleemat v2.6.2" "User Commands"
+.SH NAME
+tasleemat \- Bilingual (English & Arabic) PMO Operating System, Interactive TUI Workstation, MCP Server & Governance Auditor
+.SH SYNOPSIS
+.B tasleemat
+[\fIOPTIONS\fR]
+.br
+.B tasleemat
+\fICOMMAND\fR [\fICOMMAND_OPTIONS\fR] [\fIARGUMENTS\fR]
+.br
+.B tasleemat
+[\fB\-h\fR | \fB\-\-help\fR | \fBhelp\fR] [\fISUBCOMMAND\fR]
+.br
+.B tasleemat
+\fBdocs\fR [\fITOPIC\fR]
+.br
+.B tasleemat
+\fBman\fR [\fICOMMAND\fR|\fITOPIC\fR]
+.SH DESCRIPTION
+.B Tasleemat
+(تسليمات) is an enterprise-grade, open-source Project Management Office (PMO) operating system and programmatic toolkit designed for Project Managers, PMO Directors, Business Leaders, and Autonomous AI Agents.
+.PP
+It provides 114 standardized, bilingual (English & Arabic) project management deliverables (228 synchronized bundles total) covering the entire project lifecycle across 8 phases (00 to 07). Each deliverable is structured into a 5-file bundle comprising Markdown Templates, Practitioner Guides, AI Prompt Schemas, Machine-Readable Schemas (Draft 2020-12 JSON & Frictionless CSV), and Production Examples.
+.PP
+Tasleemat is fully aligned with PMI PMBOK® (6th, 7th & 8th Edition ready), ISO 21500 / 21502 standards, Saudi Digital Government Authority (DGA) regulations, and the NIST AI Risk Management Framework (AI RMF).
+.SH OFFLINE & AIRGAPPED ENVIRONMENTS
+Tasleemat is designed with zero-telemetry architecture and 100% offline capability for mission-critical, classified, and airgapped environments:
+.IP \(bu 2
+\fBZero External Network Calls:\fR All 114 forms, 228 bilingual deliverables, Draft 2020-12 JSON schemas, Frictionless data packages, bilingual lexicons, and documentation pages are bundled directly inside the Python package wheel.
+.IP \(bu 2
+\fBOffline Wheel Installation:\fR Can be transferred via airgap media and installed with:
+.nf
+    pip install \-\-no\-index \-\-find\-links /path/to/wheels tasleemat
+.fi
+.IP \(bu 2
+\fBOffline AI & LLM Inference:\fR Built-in support for local Ollama endpoints (http://localhost:11434), vLLM, custom private endpoints, and offline mock generation (\fB\-\-mock\fR).
+.IP \(bu 2
+\fBOffline Schema Validation & Governance Auditing:\fR Validate project structures, verify deliverable completion, and calculate Stage-Gate readiness without internet connectivity.
+.IP \(bu 2
+\fBNative Terminal Workstation:\fR The interactive TUI (\fBtasleemat tui\fR) operates entirely within the terminal with real-time Arabic text shaping and zero web asset dependencies.
+.SH COMMANDS
+.TP
+.B init [\-n \fINAME\fR] [\-c \fICODE\fR] [\-\-pm \fIPM\fR] [\-\-sponsor \fISPONSOR\fR] [\-t \fITIER\fR] [\-p \fIPACK\fR] [\-l \fILANG\fR] [\-o \fIOUT\fR]
+Scaffold a complete, tailored PMO project workspace populated with 5-file deliverable bundles based on governance tier, methodology pack, and language.
+.TP
+.B audit [\fIPATH\fR] [\-t \fITIER\fR] [\-p \fIPACK\fR] [\-\-strict] [\-\-no\-schema] [\-\-json] [\-o \fIOUT\fR]
+Audit and verify a project workspace against PMO governance tiers and 6 Stage-Gates. Computes Overall Completion %, Governance Score %, and Draft 2020-12 schema conformance.
+.TP
+.B docs [\fITOPIC\fR]
+Browse offline documentation guides. Supported topics include: \fIairgap\fR, \fItiers\fR, \fIpacks\fR, \fIgates\fR, \fIeva\fR, \fImcp\fR, \fIcatalog\fR, \fIlexicon\fR, and \fIcli\fR. Run with no arguments to list all available topics.
+.TP
+.B man [\fICOMMAND\fR|\fITOPIC\fR]
+Display formatted manual reference page with pager support.
+.TP
+.B list [\-l {\fIar\fR|\fIen\fR}]
+List all 114 project management forms in the master catalog indexed by phase and code.
+.TP
+.B search \fIQUERY\fR [\-l {\fIar\fR|\fIen\fR}]
+Search the bilingual catalog for matching form titles, keywords, or PMO form codes.
+.TP
+.B generate \-f \fIFORM\fR [\-n \fINOTES\fR] [\-l {\fIar\fR|\fIen\fR}] [\-p \fIPROVIDER\fR] [\-m \fIMODEL\fR] [\-k \fIKEY\fR] [\-o \fIOUT\fR] [\-\-mock]
+Auto-fill PMO deliverables from raw project notes using LLM AI accounts or offline mock mode.
+.TP
+.B config [{\fIset\fR|\fIshow\fR}] [\-\-provider \fIPROVIDER\fR] [\-\-model \fIMODEL\fR] [\-\-key \fIKEY\fR] [\-\-endpoint \fIURL\fR]
+Configure default LLM AI credentials securely stored at ~/.tasleemat/config.json.
+.TP
+.B tui [\-l {\fIar\fR|\fIen\fR}]
+Launch the full-screen interactive Terminal User Interface (TUI) workstation.
+.TP
+.B mcp
+Start the Model Context Protocol (MCP) server over stdio for AI agent orchestration (Cursor, Claude Desktop, Antigravity, OpenCode).
+.TP
+.B test [\-v]
+Execute the automated test suite verifying forms, schemas, calculations, and CLI functionality.
+.SH GOVERNANCE TIERS
+.TP
+.B Tier 1: Enterprise / Strategic
+High-budget, high-complexity, or safety-critical initiatives. Mandates 35 to 50 deliverables and all 6 Stage-Gates.
+.TP
+.B Tier 2: Standard Enterprise
+Standard projects requiring structured oversight without excessive bureaucracy. Mandates 18 to 25 deliverables.
+.TP
+.B Tier 3: Fast-Track / Lean
+Agile spikes, internal tooling, or low-risk operational changes. Mandates 7 to 9 essential deliverables.
+.SH METHODOLOGY PACKS
+.TP
+.B General / PMBOK
+Comprehensive PMI PMBOK® aligned baseline practices.
+.TP
+.B Agile / Scrum
+Iterative development, sprint backlogs, burn-up/down charts, and retrospective improvements.
+.TP
+.B AI Governance & Engineering
+NIST AI RMF, ISO/IEC 42001, AI model cards, ethical impact assessments, and data bias checks.
+.TP
+.B Predictive / Waterfall
+Formal sequential phases with strict baseline control.
+.TP
+.B Hybrid
+Blends predictive governance and executive gates with iterative sprint-based execution.
+.SH STAGE-GATES
+.TP
+.B Gate 0: Strategic Alignment & Mandate
+Verifies organizational need and portfolio fit.
+.TP
+.B Gate 1: Business Case & Justification
+Approves financial justification, benefits realization, and feasibility.
+.TP
+.B Gate 2: Project Charter Authorization
+Formal authorization granting the Project Manager authority to commit resources.
+.TP
+.B Gate 3: Integrated Baseline Approval
+Locks Scope, Schedule, Cost, Quality, and Risk baselines prior to major execution spend.
+.TP
+.B Gate 4: Operational Readiness
+Confirms deliverable acceptance, transition plans, training, and operational handover.
+.TP
+.B Gate 5: Handover, Benefits Realization & Closeout
+Final contractual acceptance, lessons learned archiving, and administrative project closure.
+.SH EARNED VALUE ANALYSIS (EVA)
+Tasleemat includes an exact mathematical EVA calculation engine:
+.PP
+.nf
+  Planned Value (PV), Earned Value (EV), Actual Cost (AC), Budget at Completion (BAC)
+  Cost Variance (CV)        = EV - AC
+  Schedule Variance (SV)    = EV - PV
+  Cost Performance (CPI)    = EV / AC
+  Schedule Performance (SPI)= EV / PV
+  Estimate at Completion    = BAC / CPI  (typical variances)
+  Estimate to Complete      = EAC - AC
+  Variance at Completion    = BAC - EAC
+  To-Complete Index (TCPI)  = (BAC - EV) / (BAC - AC)
+.fi
+.SH ENVIRONMENT VARIABLES
+.TP
+.B TASLEEMAT_HOME
+Custom directory for configuration and workspace defaults (Default: ~/.tasleemat).
+.TP
+.B TASLEEMAT_OFFLINE
+Set to 1 to force offline operation and suppress any network requests.
+.TP
+.B NO_COLOR
+Set to 1 to disable ANSI terminal colors.
+.SH EXIT CODES
+.TP
+.B 0
+Success.
+.TP
+.B 1
+Error, schema validation failure, or audit compliance violation in strict mode.
+.TP
+.B 2
+Command-line syntax or argument parsing error.
+.SH EXAMPLES
+.PP
+Scaffold a standard Arabic Agile workspace:
+.PP
+.nf
+    tasleemat init \-\-tier 2 \-\-pack agile \-\-lang ar \-\-name 'منصة التحول الرقمي' \-\-code 'PRJ-2026-01'
+.fi
+.PP
+Audit a project workspace in strict CI/CD mode with JSON output:
+.PP
+.nf
+    tasleemat audit ./my_project \-\-tier 2 \-\-pack agile \-\-strict \-\-json \-o audit_report.json
+.fi
+.PP
+Read the offline airgap operation guide:
+.PP
+.nf
+    tasleemat docs airgap
+.fi
+.PP
+Display the offline reference manual:
+.PP
+.nf
+    tasleemat man
+.fi
+.SH AUTHOR
+Mohamed Fakhruldeen <mohamed@fakhr.me>
+.br
+Personal Website: https://fakhr.me
+.br
+Documentation & Live Portal: https://fakhr.me/Tasleemat
+.br
+Source Code Repository: https://github.com/fakhruldeen/Tasleemat
+.SH REPORTING BUGS
+Report issues on GitHub: https://github.com/fakhruldeen/Tasleemat/issues
+.SH COPYRIGHT
+Copyright \(co 2026 Mohamed Fakhruldeen / Tasleemat.
+.br
+Released under the MIT License.
+.SH SEE ALSO
+.BR mkdocs (1),
+.BR git (1)
