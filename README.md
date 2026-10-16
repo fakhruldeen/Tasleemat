@@ -6,6 +6,7 @@ type: Overview
 <!-- mcp-name: io.github.fakhruldeen/tasleemat -->
 
 
+<div align="center">
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/logo.png" alt="Tasleemat PMO Toolkit Logo" width="300">
@@ -104,7 +105,6 @@ Most Project Management Offices (PMOs) and Project Managers waste hundreds of ho
 
 ---
 
-<div align="center">
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/fakhruldeen/Tasleemat/main/docs/img/Readme.jpeg" alt="Tasleemat PMO Operating System Banner" width="100%">
